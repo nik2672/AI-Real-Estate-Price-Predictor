@@ -1,0 +1,14 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.h5  # Ignore model weight files
+
+# Ignore environment files
+.env
+
+# Ignore unnecessary logs
+*.log
+
+# Ignore node_modules for React
+node_modules/
