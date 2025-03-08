@@ -267,7 +267,7 @@ const lineDistanceChartConfigurationOptions = {
         return;
       }
       try {//make request to server to fetch the predicted price, using /predict endpoint  
-      const predictionResponse = await fetch('http://localhost:8000/predict', {//uses the fetch api to, await pauses the the operation until response is received 
+      const predictionResponse = await fetch('${BACKEND_URL}/predict', {//uses the fetch api to, await pauses the the operation until response is received 
           method: 'POST',//post method deifined 
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(submittedFormData), //convert the user's input data into a json string format as fetch api request body to be a string when sending json data 
@@ -295,7 +295,7 @@ const lineDistanceChartConfigurationOptions = {
   useEffect(() => {//similar to fetchign the predicted price, use effect is used for fetching the dataset (data.csv) from backend for chart data
     const fetchPropertyChartData = async () => {
       try {
-        const dataResponse = await fetch('http://localhost:8000/data');//fetch data from the api 
+        const dataResponse = await fetch('${Backend_URL}/data');//fetch data from the api 
         const fetchedChartData = await dataResponse.json();//parse response JSON 
 
         // calcaulte the average price by property type
