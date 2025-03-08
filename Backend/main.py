@@ -6,10 +6,10 @@ from neural import predict_price, load_or_train_model
 import os
 
 app = FastAPI()
-origins = ["http://localhost:3000"] #create our origin domain to make requests from our frontend which runs on localhoast 3000
+origins = ["*"] #create our origin domain to make requests from our frontend which runs on localhoast 3000 * EDIT I CHANGED ORGINS TO * IN INSTEAD OF "HTTPS://LOCALHOST:3000" IN ORDER TO ALLOW ALL FRONTEND ORGIINS 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins, 
+    allow_origins=["*"], # I CHANGED = ORIGINS TO "*"
     allow_credentials=True,
     allow_methods=["*"],#allow all GET, POST PUT or delete options as we have two endpoints using POST and GET 
     allow_headers=["*"],
