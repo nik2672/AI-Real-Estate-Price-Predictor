@@ -17,7 +17,7 @@ import {
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, Title, Tooltip, Legend);//get relevant component used such as legent title etc 
 
-const BACKEND_URL = "https://ai-real-estate-price-predictor-production.up.railway.app";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 function PredictionPage() { //create prediction page component 
   const currentLocation = useLocation();
