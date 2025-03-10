@@ -23,7 +23,7 @@ function MapComponent({postcode }) {
     const getCoordinates = async () => {
       try {
         const response = await fetch(//fetches the grographical location based on the provided postode requesting to Opencage 
-          `https://api.opencagedata.com/geocode/v1/json?q=${postcode},Australia&key=c561a3eedffe482fa6d33d8553b0d864`//prvide opencage the postcode, so it is converted to geographical coordinates
+          `https://api.opencagedata.com/geocode/v1/json?q=${postcode},Australia&key=8c26a967186448e48146b0dc1a491e80`//prvide opencage the postcode, so it is converted to geographical coordinates old: c561a3eedffe482fa6d33d8553b0d864
         );
         const data = await response.json();//await pauses the getcoordiantes until the fetch request is completed 
 
