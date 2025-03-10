@@ -1,4 +1,3 @@
-const BACKEND_URL = "https://ai-real-estate-price-predictor-production.up.railway.app";
 
 //the prediction page consisting displayign predicted price based on user input feature, map of melbourne and three charts usign chart.js
 import React, { useState, useEffect } from 'react';
@@ -19,6 +18,8 @@ import {
 } from 'chart.js';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, Title, Tooltip, Legend);//get relevant component used such as legent title etc 
+
+const BACKEND_URL = "https://ai-real-estate-price-predictor-production.up.railway.app";
 
 function PredictionPage() { //create prediction page component 
   const currentLocation = useLocation();
