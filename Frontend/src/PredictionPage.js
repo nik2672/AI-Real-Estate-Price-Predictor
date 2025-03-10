@@ -1,5 +1,3 @@
-
-//the prediction page consisting displayign predicted price based on user input feature, map of melbourne and three charts usign chart.js
 import React, { useState, useEffect } from 'react';
 import { Container, Box, Typography, Fade, CircularProgress, Button } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom';
