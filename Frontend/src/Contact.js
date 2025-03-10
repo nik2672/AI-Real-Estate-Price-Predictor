@@ -17,7 +17,7 @@ function Contact() {
       name: 'Nikhil Mohite',
       role: 'Team LEADER',
       email: '104549772@student.swin.edu.au',
-      image: '/images/pic2.JPG',
+      image: '/images/photo1.jpg',
     },
 
 
